@@ -6,7 +6,9 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnClickMe;
     private EditText edtEmail;
     private EditText edtPassword;
+    private Button switchRemember;
 
 
     @Override
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btnClickMe = (Button) findViewById(R.id.btnClickMe);
         edtEmail = (EditText) findViewById(R.id.edtEmail);
         edtPassword = (EditText) findViewById(R.id.edtPassword);
+        switchRemember = (Button) findViewById(R.id.switchRemember);
         btnClickMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+        });
+        switchRemember.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
         });
 
     }
